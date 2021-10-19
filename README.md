@@ -20,12 +20,12 @@ This will greatly benefit clinicians by giving them an effective instrument and 
 The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
 GRUs train faster and have comprable results. 
 
-## Results
+## 2. Results
 
 - fill
 
   
-## Data Description
+## 3. Data Description
 
 - id - globally-unique time step identifier across an entire file
 
@@ -45,13 +45,13 @@ GRUs train faster and have comprable results.
 - pressure - the airway pressure measured in the respiratory circuit, measured in cmH2O.
 
   
-## Libraries
+## 4. Libraries
 
 -Keras
 -Optuna
 -sklearn
 -pandas
 -numpy
-## References
+## 5. References
 
 https://www.kaggle.com/c/ventilator-pressure-prediction/data
