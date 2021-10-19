@@ -1,61 +1,51 @@
-# Google_Ventilator_RNN
-## Concrete Compressive Strength Prediction using Machine Learning
-
-Concrete is one of the most important materials in Civil Engineering. Knowing the compressive strength of concrete is very important when constructing a building or a bridge. The Compressive Strength of Concrete is a highly nonlinear function of ingredients used in making it and their characteristics. Thus, using Machine Learning to predict the Strength could be useful in generating a combination of ingredients which result in high Strength.
-
-Please read this [blog](https://towardsdatascience.com/concrete-compressive-strength-prediction-using-machine-learning-4a531b3c43f3) for more explanation. Also leave some claps to show appreciation!
-
-Please refer [*ConcreteCompressiveStrengthPrediction.ipynb*](https://github.com/pranaymodukuru/Concrete-compressive-strength/blob/master/ConcreteCompressiveStrengthPrediction.ipynb) for code.
-
-## 1. Problem Statement
-Predicting Compressive Strength of Concrete given its age and quantitative measurements of ingredients.
-
-## 2. Data Description
-
-Data is obtained from UCI Machine Learning Repository.
-https://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength
-
-* Number of instances - 1030
-* Number of Attributes - 9
-  * Attribute breakdown - 8 quantitative inputs, 1 quantitative output
-
-#### Attribute information
-##### Inputs
-* Cement
-* Blast Furnace Slag
-* Fly Ash
-* Water
-* Superplasticizer
-* Coarse Aggregate
-* Fine Aggregate
-
-All above features measured in kg/$m^3$
-
-* Age (in days)
-
-##### Output
-* Concrete Compressive Strength (Mpa)
-
-## 3. Modelling and Evaluation
-
-* Algorithms used
-  * Linear regression
-  * Lasso regression
-  * Ridge regression
-  * Decision Trees
-  * Random Forests
-
-* Metric - Since the target variable is a continuous variable, regression evaluation metric RMSE (Root Mean Squared Error) and R2 Score (Coefficient of Determination) have been used.
-
-## 4. Results
-
-#### Feature correlation
-![Feature correlation](https://github.com/pranaymodukuru/Concrete-compressive-strength/blob/master/imgs/corr.png)
-#### Feature importance
-![Feature importance](https://github.com/pranaymodukuru/Concrete-compressive-strength/blob/master/imgs/feat_imp.png)
-#### Final Comparison
-![Final Comparison](https://github.com/pranaymodukuru/Concrete-compressive-strength/blob/master/imgs/comparision.png)
+# Ventilator Pressure Inference 
 
 
-## 5. References
-1. https://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength
+This respository contains data from a Kaggle competition 
+(Ventilator Pressure Prediction) hosted by Google Brain.
+
+## Summary 
+
+######Problem Statement
+
+The pandemic has shown the current limitations of ventilators because of it's intesenive, manual procedure. 
+Ventilators are used as a last resort for clinicians, since it is highly intrusive, to manually pump oxygen into a patient's lung. 
+
+
+Machine learning can help reduce barrier of developing new methods for controlling mechanical ventilators. 
+This will greatly benefit clinicians by giving them an effective instrument and hopefully reduce the burden of them during these times.
+ As a result, ventilator treatments may become more widely available to help patients breathe.
+
+######Technical Overview
+The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
+GRUs train faster and have comprable results. 
+
+## Results
+
+- fill
+
+  
+## Data Description
+
+-id - globally-unique time step identifier across an entire file
+-breath_id - globally-unique time step for breaths
+-R - lung attribute indicating how restricted the airway is (in cmH2O/L/S). Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw, with higher R being harder to blow.
+-C - lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having thinner latex and easier to blow.
+-time_step - the actual time stamp.
+-u_in - the control input for the inspiratory solenoid valve. Ranges from 0 to 100.
+-u_out - the control input for the exploratory solenoid valve. Either 0 or 1.
+
+Target Variable
+-pressure - the airway pressure measured in the respiratory circuit, measured in cmH2O.
+
+  
+## Libraries
+
+-Keras
+-Optuna
+-sklearn
+-pandas
+-numpy
+## References
+
+https://www.kaggle.com/c/ventilator-pressure-prediction/data
