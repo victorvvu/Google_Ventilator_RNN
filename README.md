@@ -29,20 +29,20 @@ GRUs train faster and have comprable results.
 
 - id - globally-unique time step identifier across an entire file
 
--breath_id - globally-unique time step for breaths
+- breath_id - globally-unique time step for breaths
 
--R - lung attribute indicating how restricted the airway is (in cmH2O/L/S). Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw, with higher R being harder to blow.
+- R - lung attribute indicating how restricted the airway is (in cmH2O/L/S). Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw, with higher R being harder to blow.
 
--C - lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having thinner latex and easier to blow.
+- C - lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having thinner latex and easier to blow.
 
--time_step - the actual time stamp.
+- time_step - the actual time stamp.
 
--u_in - the control input for the inspiratory solenoid valve. Ranges from 0 to 100.
+- u_in - the control input for the inspiratory solenoid valve. Ranges from 0 to 100.
 
--u_out - the control input for the exploratory solenoid valve. Either 0 or 1.
+- u_out - the control input for the exploratory solenoid valve. Either 0 or 1.
 
-Target Variable
--pressure - the airway pressure measured in the respiratory circuit, measured in cmH2O.
+*Target Variable*
+- pressure - the airway pressure measured in the respiratory circuit, measured in cmH2O.
 
   
 ## Libraries
