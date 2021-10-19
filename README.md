@@ -4,9 +4,9 @@
 This respository contains data from a Kaggle competition 
 (Ventilator Pressure Prediction) hosted by Google Brain.
 
-## *Summary* 
+## Summary 
 
-###### Problem Statement
+##### Problem Statement
 
 The pandemic has shown the current limitations of ventilators because of it's intesenive, manual procedure. 
 Ventilators are used as a last resort for clinicians, since it is highly intrusive, to manually pump oxygen into a patient's lung. 
@@ -16,7 +16,7 @@ Machine learning can help reduce barrier of developing new methods for controlli
 This will greatly benefit clinicians by giving them an effective instrument and hopefully reduce the burden of them during these times.
  As a result, ventilator treatments may become more widely available to help patients breathe.
 
-###### Technical Overview
+##### Technical Overview
 The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
 GRUs train faster and have comprable results. 
 
