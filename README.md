@@ -27,7 +27,7 @@ GRUs train faster and have comprable results.
   
 ## Data Description
 
--id - globally-unique time step identifier across an entire file
+- id - globally-unique time step identifier across an entire file
 
 -breath_id - globally-unique time step for breaths
 
