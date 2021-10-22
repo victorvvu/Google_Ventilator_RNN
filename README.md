@@ -65,3 +65,6 @@ Here is the learning rate plotted
 ## 5. References
 
 https://www.kaggle.com/c/ventilator-pressure-prediction/data
+
+Referenced features and LR 
+https://www.kaggle.com/tenffe/finetune-of-tensorflow-bidirectional-lstm
