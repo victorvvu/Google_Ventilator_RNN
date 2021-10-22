@@ -11,19 +11,19 @@ This respository contains data from a Kaggle competition
 ##### Problem Statement
 
 The pandemic has shown the current limitations of ventilators because of it's intesenive, manual procedure. 
-Ventilators are used as a last resort for clinicians, since it is highly intrusive, to manually pump oxygen into a patient's lung. 
+Ventilators are used as a last resort for clinicians, to manually pump oxygen into a patient's lung. 
 
 
 Machine learning can help reduce barrier of developing new methods for controlling mechanical ventilators. 
 This will greatly benefit clinicians by giving them an effective instrument and hopefully reduce the burden of them during these times.
- As a result, ventilator treatments may become more widely available to help patients breathe.
+As a result, ventilator treatments may become more widely available to help patients breathe.
 
 ##### Technical Overview
 The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
-GRUs train faster and have comprable results. 
+GRUs train faster, since they have one less gate to tune. In practice, GRU and LSTM models are both trained to see which one yields better results. 
 
 ## 2. Results
-Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to get pretty good results for a simplier model. Unfortunately, I was not able to save my model, since the kernel froze randomly as I was training my model. However, I was still able to submit my results in the competition. 
+Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to obrtain good results with a simplier model. Unfortunately, I was not able to save my model, since the kernel froze randomly as I was training my model. However, I was still able to submit my results in the competition. 
 
 I performed cross validations 5 times. Below is the plotted loss fucntion, on one fold
 
@@ -35,7 +35,9 @@ Here is the learning rate plotted
 
 ![Learning Rate](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig2%20(1).jpg?raw=true)
 
-  
+ 
+Overall I am pretty satisfied with my results. If this model was applied to medical practioners, it would serve as a strong baseline to what the next generation mechanical ventalitors can do. Ventilators can be the difference from life or death so having the best medical equipment is imperative to combat COVID-19.
+ 
 ## 3. Data Description
 
 - id - globally-unique time step identifier across an entire file
