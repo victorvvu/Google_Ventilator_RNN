@@ -27,7 +27,7 @@ I performed cross validations 5 times. Below is the plotted loss fucntion, on on
 ![Loss Function](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig%20(3).jpg?raw=true)
 
 Here is the learning rate plotted
-![Learning Rate](![image](https://user-images.githubusercontent.com/69603444/138519889-7c032edc-e9d5-456b-b63c-d9bfd6fafe4d.png))
+![Learning Rate](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig2%20(1).jpg?raw=true)
 
   
 ## 3. Data Description
@@ -52,11 +52,12 @@ Here is the learning rate plotted
   
 ## 4. Libraries
 
--Keras
--Optuna
--sklearn
--pandas
--numpy
+- Keras
+- Optuna
+- sklearn
+- pandas
+- numpy
+- pandas 
 ## 5. References
 
 https://www.kaggle.com/c/ventilator-pressure-prediction/data
