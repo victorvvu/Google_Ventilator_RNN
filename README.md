@@ -24,9 +24,13 @@ GRUs train faster and have comprable results.
 Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to get pretty good results for a simplier model. Unfortunately, I was not able to save my model, since the kernel froze randomly as I was training my model. However, I was still able to submit my results in the competition. 
 
 I performed cross validations 5 times. Below is the plotted loss fucntion, on one fold
+
+
 ![Loss Function](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig%20(3).jpg?raw=true)
 
 Here is the learning rate plotted
+
+
 ![Learning Rate](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig2%20(1).jpg?raw=true)
 
   
