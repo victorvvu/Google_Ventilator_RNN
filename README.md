@@ -20,7 +20,7 @@ As a result, ventilator treatments may become more widely available to help pati
 
 ##### Technical Overview
 The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
-GRUs train faster, since they have one less gate to tune. In practice, GRU and LSTM models are both trained to see which one yields better results. 
+GRUs train faster, since they have one less gate to tune. In practice, GRU and LSTM models are both trained to see which one yields better results. I also tried training a LightGBM model, but it was unable to keep up with the GRU.
 
 ## 2. Results
 Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to obrtain good results with a simplier model. Unfortunately, I was not able to save my model, since the kernel froze randomly as I was training my model. However, I was still able to submit my results in the competition. 
