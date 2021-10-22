@@ -4,6 +4,8 @@
 This respository contains data from a Kaggle competition 
 (Ventilator Pressure Prediction) hosted by Google Brain.
 
+![Loss Function](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/vent_gif.gif?raw=true)
+
 ## 1. Summary 
 
 ##### Problem Statement
