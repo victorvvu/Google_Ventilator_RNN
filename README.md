@@ -27,6 +27,7 @@ Here the GRU actually performed fairly well against LTSM models on Kaggle. Even 
 
 I created a correlation matrix to see if I can get any insights about the target variables or the features.
 
+![corr](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/correlation_feat.png?raw=true)
 
 I performed cross validations 5 times. Below is the plotted loss fucntion on one fold. After ~120 epochs, the model starts overfitting so training stops.
 
