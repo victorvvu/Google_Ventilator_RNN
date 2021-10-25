@@ -74,5 +74,4 @@ Overall I am pretty satisfied with my results. If this model was applied to medi
 
 https://www.kaggle.com/c/ventilator-pressure-prediction/data
 
-Referenced features and LR 
-https://www.kaggle.com/tenffe/finetune-of-tensorflow-bidirectional-lstm
+[Referenced features and LR](https://www.kaggle.com/tenffe/finetune-of-tensorflow-bidirectional-lstm)
