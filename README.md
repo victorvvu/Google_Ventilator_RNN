@@ -10,7 +10,7 @@ This respository contains data from a Kaggle competition
 
 ##### Problem Statement
 
-The pandemic has shown the current limitations of ventilators because of it's intesenive, manual procedure. 
+The pandemic has shown the current limitations of ventilators because of its intensive, manual procedure. 
 Ventilators are used as a last resort for clinicians, to manually pump oxygen into a patient's lung. 
 
 
@@ -19,11 +19,11 @@ This will greatly benefit clinicians by giving them an effective instrument and 
 As a result, ventilator treatments may become more widely available to help patients breathe.
 
 ##### Technical Overview
-The dataset is comprised of numerous time series of breaths. So I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
+The dataset is comprised of numerous time series of breaths. So, I decide to construct a RNN with GRU units. LSTM units usually outperform GRU, however
 GRUs train faster, since they have one less gate to tune. In practice, GRU and LSTM models are both trained to see which one yields better results. I also tried training a LightGBM model, but it was unable to keep up with the GRU.
 
 ## 2. Results
-Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to obrtain good results with a simplier model. Unfortunately, I was not able to save my model, since the kernel froze. However, I was still able to submit my results in the competition. 
+Here the GRU actually performed fairly well against LTSM models on Kaggle. Even though the GRU was out performed by LSTM, I was still able to obtain good results (MAE of .17) with a simpler model. Unfortunately, I was not able to save my model, since the kernel froze. However, I was still able to submit my results in the competition. 
 
 I created a correlation matrix to see if I can get any insights about the target variables or the features.
 
@@ -40,7 +40,7 @@ Here is the learning rate plotted
 ![Learning Rate](https://github.com/victorvvu/Google_Ventilator_RNN/blob/main/data_set_imgs/fig2%20(1).jpg?raw=true)
 
  
-Overall I am pretty satisfied with my results. If this model was applied to medical practioners, it would serve as a strong baseline to what the next generation mechanical ventalitors can do. Ventilators can be the difference from life or death so having the best medical equipment is imperative to combat COVID-19.
+Overall I am pretty satisfied with my results. If this model was applied to medical practioners, it would serve as a strong baseline to what the next generation mechanical ventilators can do. Ventilators can be the difference from life or death so having the best medical equipment is imperative to combat COVID-19.
  
 ## 3. Data Description
 
